@@ -36,7 +36,7 @@ h1 {
 
 h2 {
   font-size: 3.5rem;
-  color: aquamarine;
+  color: #e1531c;
 }
 
 h3 {
@@ -174,4 +174,27 @@ a {
 
 a:hover, a:focus, a:active {
   color: #824027;
+}
+#portfolio .portfolio-item {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  max-width: 25rem;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 3px 1px rgba(218, 217, 217, 0.58);
+  overflow: hidden;
+}
+#portfolio .portfolio-item .portfolio-item-caption:hover {
+  opacity: 1;
+}
+#portfolio .portfolio-item .portfolio-item-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .2s ease-in-out;
+  opacity: 0;
+  background-color: #4fb5a1c2;
+}
+#portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+  font-size: 1.43rem;
 }
